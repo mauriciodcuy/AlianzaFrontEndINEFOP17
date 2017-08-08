@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function guille(){
+                var a = 3;
+                var b = 17;
+                var n = 4;
+                var menor = 0;
+                var mayor = 0;
+                if (a < b) {
+                    menor = a;
+                    mayor = b;
+                }
+                else {
+                    menor = b;
+                    mayor = a;
+                }
+                for (var i=menor; i<=mayor; i++){
+                    if (i%n==0){
+                    console.log(i);
+                    }
+                }
+            }
+        </script>
+        <title>FOR</title>
+    </head>
+    <body>
+        <input type="submit" id="aValor" value="Calcular" onclick="guille()"/>
+
+
+    </body>
+
+</html>
