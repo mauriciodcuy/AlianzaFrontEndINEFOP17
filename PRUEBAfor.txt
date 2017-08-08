@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="next/javascript">
+            function mostrar(){
+                console.log('ANDA!')
+            }
+        </script>
+        <title>FOR</TITLE>
+    </head>
+
+    <body>
+        <input type="submit" value="Click" onclick="mostrar()" />
+    </body>
+</html>
