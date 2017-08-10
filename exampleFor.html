@@ -4,11 +4,21 @@
 <head>
     <script type="text/javascript">
         function mostrar() {
-            var a = 3;
-            var b = 17;
+            var a = 17;
+            var b = 3;
             var n = 4;
             //mi codigo solucion para el problema//
-            for (var i = a; i <= b; i = i + 1) {
+            var menor;
+            var mayor;
+            if (a < b) {
+                menor = a;
+                mayor = b;
+            } else {
+                mayor = a;
+                menor = b;
+            }
+
+            for (var i = menor; i <= mayor; i = i + 1) {
                 if (i % 4 == 0) {
                     console.log(i);
                 }
