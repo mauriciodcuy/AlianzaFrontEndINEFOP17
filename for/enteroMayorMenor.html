@@ -1,0 +1,42 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <title>enteroMayorMenor</title>
+    <script type="text/javascript">
+        var maximo;
+        var minimo;
+        var n = 3;
+        var primerN;
+        var segundoN;
+        if (n > 0) {
+            primerN = parseInt(prompt('primer numero hasta n veces'));
+            maximo = primerN;
+            minimo = primerN;
+
+            while (n - 1 > 0) {
+
+                segundoN = parseInt(prompt('siguientes numeros hasta n veces'));
+                if (segundoN < minimo) {
+                    minimo = segundoN;
+                } else {
+                    if (segundoN > maximo) {
+                        maximo = segundoN;
+                    }
+                }
+                n--;
+            }
+            alert("El maximo es:" + maximo + " y El minimo es:" + minimo);
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
