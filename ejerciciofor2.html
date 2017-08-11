@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function mostrar() {
+            var n = prompt("Ingrese cuantos numeros quiere");
+            var max = 0;
+            var min = 0;
+            var cont = 1;
+            while (cont <= n) {
+                var ne = prompt("Que numero agrego?");
+                if (ne > max) {
+                    max = ne;
+
+                } else {
+                    if (ne < min) {
+                        min = ne;
+                    }
+                }
+                cont = cont + 1;
+            }
+
+            console.log("El numero mayor es " + max + " y el menor es " + min);
+        }
+    </script>
+    <title>FOR or FOUR that's the question </title>
+</head>
+
+<body>
+
+</body>
+<h1>Revisar la consola para resultados</h1>
+<input type="submit" value="Click" onclick="mostrar()" />
+</body>
+
+
+</html>
