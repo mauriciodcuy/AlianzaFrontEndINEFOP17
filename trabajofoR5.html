@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function mostrar() {
+            var nums = [];
+            var text = "";
+            for (var i = 0; i < 5; i++) {
+                nums.push(prompt("Escribe un numero menor a 60"));
+                for (var p = 0; p < nums[i]; p++) {
+                    var text = text + "*";
+                }
+                document.writeln(text + "<br/>");
+                text = "";
+            }
+        }
+    </script>
+    <title>FOR or FOUR that's the question </title>
+</head>
+
+<body>
+
+</body>
+<h1>Revisar la consola para resultados</h1>
+<input type="submit" value="Click" onclick="mostrar()" />
+</body>
+
+
+</html>
