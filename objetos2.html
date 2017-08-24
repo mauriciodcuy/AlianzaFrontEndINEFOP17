@@ -3,24 +3,8 @@
 
 <head>
     <script type="text/javascript">
-        /*var persona = {
-
-                                            this.nombre = prompt("Introduzca nombre");
-                                            this.apellido = prompt("Introduzca apellido");
-                                            this.edad = prompt("Introduzca edad");
-
-                                            var persona = new Object();
-                                            persona.nombre =
-                                            "Esclavo";
-                                            persona.apellido = "Mioo";
-                                            persona.edad = 31;
-
-                                            nombre: "Esclavo",
-                                            apellido: "Mio",
-                                            edad: 999,
-                                        } */
-
         var personas = [];
+        var instituciones = [];
 
         function Persona(nombre, apellido, edad) {
             this.nombre = nombre;
@@ -35,11 +19,9 @@
             this.ubicacion = ubicacion;
             this.telefono = telefono;
             this.estudiantes = estudiantes;
-
-
         }
 
-        function ingresar() {
+        function ingresarPersona() {
             var seguir = confirm("Ingresar a alguien?");
             while (seguir) {
                 var nombreEntrada = prompt("Ingresar nombre");
@@ -49,8 +31,20 @@
                 personas.push(yo);
 
                 seguir = confirm("Ingresar mas personas?");
+                console.log(personas);
             }
-            console.log(personas);
+        }
+
+
+        function ingresarInstitucion() {
+            var nombreEntrada = prompt("Ingresar nombre");
+            var metrosEntrada = prompt("Ingresar metros");
+            var ubicacionEntrada = prompt("Ingresar ubicacion");
+            var telefonoEntrada = prompt("Ingresar telefono");
+            var estudiantes = personas;
+            var instituto = new Institucion(nombreEntrada, metrosEntrada, ubicacionEntrada, telefonoEntrada, estudiantes);
+            instituciones.push(instituto);
+            console.log(instituciones);
         }
     </script>
     <title>FOR or FOUR that's the question </title>
@@ -60,7 +54,8 @@
 
 </body>
 <h1>Revisar la consola para resultados</h1>
-<input type="submit" value="Click" onclick="ingresar()" />
+<input type="submit" value="Click para Personas" onclick="ingresarPersona()" />
+<input type="submit" value="Click para Institucion" onclick="ingresarInstitucion()" />
 </body>
 
 
