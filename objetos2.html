@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        /*var persona = {
+
+                            this.nombre = prompt("Introduzca nombre");
+                            this.apellido = prompt("Introduzca apellido");
+                            this.edad = prompt("Introduzca edad");
+
+                            var persona = new Object();
+                            persona.nombre =
+                            "Esclavo";
+                            persona.apellido = "Mioo";
+                            persona.edad = 31;
+
+                            nombre: "Esclavo",
+                            apellido: "Mio",
+                            edad: 999,
+                        } */
+
+        var personas = [];
+
+        function Persona(nombre, apellido, edad) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+
+        }
+        function Institucion(nombre,metros,ubicacion,telefono,estudiantes) {
+            this.nombre = nombre;
+            this.metros = metros;
+                
+
+        }
+        function ingresar() {
+            var seguir = confirm("Ingresar a alguien?");
+            while (seguir) {
+                var nombreEntrada = prompt("Ingresar nombre");
+                var apellidoEntrada = prompt("Ingresar apellido");
+                var edadEntrada = prompt("Ingresar edad");
+                var yo = new Persona(nombreEntrada, apellidoEntrada, edadEntrada);
+                personas.push(yo);
+
+                seguir = confirm("Ingresar mas personas?");
+            }
+            console.log(personas);
+        }
+    </script>
+    <title>FOR or FOUR that's the question </title>
+</head>
+
+<body>
+
+</body>
+<h1>Revisar la consola para resultados</h1>
+<input type="submit" value="Click" onclick="ingresar()" />
+</body>
+
+
+</html>
